@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" target-language="ru" original="ng2.template">
+    <body>
+      <trans-unit id="801ebd128d066af165032908048bf85435e62e0a" datatype="html">
+        <source>Hello world!</source>
+        <target>Всем привет!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="input-placeholder" datatype="html">
+        <source>Enter a number</source>
+        <target>Введите число</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0298ac54c0db15845018c798f345db2bca6b0f7" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {no tasks} =1 {1 task} =2 {2 tasks} few {<x id="INTERPOLATION"/> tasks} many {<x id="INTERPOLATION"/> tasks} other {<x id="INTERPOLATION"/> tasks}}</source>
+        <target>{VAR_PLURAL, plural, =0 {нет задач} =1 {1 задача} =2 {2 задачи} few {<x id="INTERPOLATION"/> задачи} many {<x id="INTERPOLATION"/> задач} other {<x id="INTERPOLATION"/> задача}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">@counter</note>
+      </trans-unit>
+      <trans-unit id="9740425f2ef8a0757676468e5ed8e7e1b7fa473c" datatype="html">
+        <source>{VAR_SELECT, select, 0 {male} 1 {female} other {unknown}}</source>
+        <target>{VAR_SELECT, select, 0 {он} 1 {она} other {оно}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1df5831cb8b3106de6bf8083aef223d528b2de8" datatype="html">
+        <source>Gender: <x id="ICU" equiv-text="{genderCode, select, 0 {male} 1 {female} other {unknown}}"/></source>
+        <target>Пол: <x id="ICU" equiv-text="{genderCode, select, 0 {male} 1 {female} other {unknown}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="097b5dfee5665aa0f7daba8b696acecde6445474" datatype="html">
+        <source>Male</source>
+        <target>Мужчина</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18f3bafdc69b800737e303bc1cb0753bd9dd3f32" datatype="html">
+        <source>Female</source>
+        <target>Женщина</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c2a9de3714f5767b174d0424bc8abe2dc37acc41" datatype="html">
+        <source>Other</source>
+        <target>Другой</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="money" datatype="html">
+        <source>I want to earn <x id="INTERPOLATION" equiv-text=" {{amount | number}"/></source>
+        <target>Я хочу заработать <x id="INTERPOLATION" equiv-text=" {{amount | number}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="string" datatype="html">
+        <source>string from .ts</source>
+        <target>строка из .ts</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

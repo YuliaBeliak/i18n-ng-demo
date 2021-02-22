@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "i18n-angular-demo": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ru": "src/i18n/messages.ru.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/i18n-angular-demo",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -60,6 +67,11 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ru": {
+              "localize": [
+                "ru"
+              ]
             }
           }
         },
@@ -71,6 +83,9 @@
           "configurations": {
             "production": {
               "browserTarget": "i18n-angular-demo:build:production"
+            },
+            "ru": {
+              "browserTarget": "i18n-angular-demo:build:ru"
             }
           }
         },
@@ -92,6 +107,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +139,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "i18n-angular-demo"
+    }
+  },
+  "defaultProject": "i18n-angular-demo",
+  "cli": {
+    "analytics": false
+  }
 }
